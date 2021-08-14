@@ -1,0 +1,16 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+*{
+    @include general;
+    font-family: $main;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
