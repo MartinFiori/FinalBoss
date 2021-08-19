@@ -1,3 +1,20 @@
+@each $wp in alquiler, buscador, compra, contacto, index{
+    .#{$wp}-body{
+        background-image: url(../../assets/mobile/#{$wp}.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+.container-full{
+    padding: 2em;
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(5px);
+
+}
+
 .texto{
     margin: 2rem 0.5rem;
     overflow-x: hidden;
@@ -9,4 +26,8 @@
         line-height: 2em;
         margin-bottom: 1em;
     }
+}
+
+.title, .subtitle{
+    @extend .texto
 }

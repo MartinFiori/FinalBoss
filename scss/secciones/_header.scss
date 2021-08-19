@@ -5,26 +5,15 @@
         background-size: cover;
     }
 }
-@each $encabezado in alquiler, buscador, compra, contacto, index, login{
-    .#{$encabezado}-bg{
-        background-image: url(../../assets/mobile/#{$encabezado}.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 250px;
-        background-color: rgba(0, 0, 0, .4);
-        background-blend-mode:hard-light;
-    }
-}
 
 
-.title, .subtitle{
+
+.header__title{
     font-size: clamp(2.7rem, 5vw, 6rem);
     color: $blue;
     text-align: center;
-    @include main-700
+    @include main-700;
+    text-decoration: underline;
 }
 
-.subtitle{
-    font-size: clamp(2rem,5vw,5rem);
-    margin-top: .5em;
-}
+

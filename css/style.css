@@ -179,7 +179,7 @@
   margin: 0px 2em .5em; }
 
 .formulario__titulo {
-  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-size: clamp(2.5rem, 6vw, 3.6rem);
   color: #003049;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -385,10 +385,50 @@
 .container-contacto .inputBox input[type="submit"]:hover {
   background: #e91e63; }
 
-.texto {
+.alquiler-body {
+  background-image: url(../../assets/mobile/alquiler.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.buscador-body {
+  background-image: url(../../assets/mobile/buscador.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.compra-body {
+  background-image: url(../../assets/mobile/compra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.contacto-body {
+  background-image: url(../../assets/mobile/contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.index-body {
+  background-image: url(../../assets/mobile/index.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.container-full {
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px); }
+
+.texto, .title, .subtitle {
   margin: 2rem 0.5rem;
   overflow-x: hidden; }
-  .texto p {
+  .texto p, .title p, .subtitle p {
     color: #003049;
     font-family: "Open Sans", sans-serif;
     font-size: clamp(16px, 2vw, 20px);
@@ -410,11 +450,8 @@ html {
   font-size: 62.5%;
   overflow-x: hidden; }
 
-.header--flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+body {
+  background-color: #EAE2B7; }
 
 .footer--flex {
   display: flex;
@@ -431,11 +468,14 @@ html {
   display: grid;
   grid-template-areas: "navegador" "texto" "footer" "dev";
   grid-template-columns: 100vw;
-  grid-template-rows: 55px auto 270px auto; }
+  grid-template-rows: 40px auto 270px auto; }
   .index .navegador {
     grid-area: navegador; }
   .index .container-texto {
-    grid-area: texto; }
+    grid-area: texto;
+    padding: 2em; }
+    .index .container-texto .container-full {
+      border-radius: 10px; }
   .index .footer {
     grid-area: footer; }
   .index .dev-section {
@@ -445,13 +485,18 @@ html {
 
 .buscador {
   display: grid;
-  grid-template-areas: "encabezado" "navegador" "mapa" "formulario"     "footer" "dev";
+  grid-template-areas: "navegador" "encabezado" "mapa" "formulario"     "footer" "dev";
   grid-template-columns: 100vw;
-  grid-template-rows: 250px 55px auto auto 270px auto; }
-  .buscador .encabezado {
-    grid-area: encabezado; }
+  grid-template-rows: 40px 100px auto auto 270px auto; }
   .buscador .navegador {
     grid-area: navegador; }
+  .buscador .encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .buscador .encabezado h1 {
+      display: inline-flex; }
   .buscador .mapa {
     grid-area: mapa; }
   .buscador .buscador__formulario {
@@ -463,16 +508,22 @@ html {
 
 .compra {
   display: grid;
-  grid-template-areas: "encabezado" "navegador" "titulo__compra" "carousel" "footer" "dev";
+  grid-template-areas: "navegador" "encabezado" "titulo__compra" "carousel" "footer" "dev";
   grid-template-columns: 100vw;
-  grid-template-rows: 250px 55px 200px auto 270px auto; }
-  .compra .encabezado {
-    grid-area: encabezado; }
+  grid-template-rows: 40px 100px 50px auto 270px auto; }
   .compra .navegador {
     grid-area: navegador;
     z-index: 1000; }
+  .compra .encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .compra .encabezado h1 {
+      display: inline-flex; }
   .compra .compra__titulo {
-    grid-area: titulo__compra; }
+    grid-area: titulo__compra;
+    margin-bottom: 50px; }
   .compra .containerCarrousel {
     grid-area: carousel; }
   .compra .footer {
@@ -483,15 +534,20 @@ html {
 
 .alquiler {
   display: grid;
-  grid-template-areas: "encabezado" "navegador" "titutlo__alquiler" "alquiler" "footer" "dev";
+  grid-template-areas: "navegador" "encabezado" "titutlo__alquiler" "alquiler" "footer" "dev";
   grid-template-columns: 100vw;
-  grid-template-rows: 250px 55px 270px auto 270px auto; }
-  .alquiler .encabezado {
-    grid-area: encabezado; }
+  grid-template-rows: 40px 150px 150px auto 270px auto; }
   .alquiler .navegador {
     grid-area: navegador;
     z-index: 1000; }
-  .alquiler titulo__alquiler {
+  .alquiler .encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .alquiler .encabezado h1 {
+      display: inline-flex; }
+  .alquiler .titulo__alquiler {
     grid-area: titulo__alquiler; }
   .alquiler .container-alquiler {
     grid-area: alquiler; }
@@ -527,20 +583,20 @@ html {
       grid-area: navegador; }
     .index .container-texto {
       grid-area: texto;
-      margin: 60px 40px; }
+      padding: 6em; }
     .index .footer {
       grid-area: footer; }
     .index .dev-section {
       grid-area: dev; }
   .buscador {
     display: grid;
-    grid-template-areas: "encabezado encabezado" "navegador navegador" "mapa formulario" "footer footer" "dev dev";
+    grid-template-areas: "navegador navegador" "encabezado encabezado" "mapa formulario" "footer footer" "dev dev";
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 400px 55px auto auto 60px; }
-    .buscador .encabezado {
-      grid-area: encabezado; }
+    grid-template-rows: 55px 150px auto auto 60px; }
     .buscador .navegador {
       grid-area: navegador; }
+    .buscador .encabezado {
+      grid-area: encabezado; }
     .buscador .mapa {
       grid-area: mapa;
       display: flex;
@@ -552,7 +608,8 @@ html {
         height: 500px;
         margin-left: 10px; }
     .buscador .buscador__formulario {
-      grid-area: formulario; }
+      grid-area: formulario;
+      margin-top: 10px; }
       .buscador .buscador__formulario .buscador__texto {
         margin-top: 30px; }
     .buscador .footer {
@@ -561,9 +618,9 @@ html {
       grid-area: dev; }
   .compra {
     display: grid;
-    grid-template-areas: "encabezado" "navegador" "titulo__compra" "carousel" "footer" "dev";
+    grid-template-areas: "navegador" "encabezado" "titulo__compra" "carousel" "footer" "dev";
     grid-template-columns: 100vw;
-    grid-template-rows: 400px 55px 200px 500px auto 60px; }
+    grid-template-rows: 55px 150px 100px 500px auto 60px; }
     .compra .encabezado {
       grid-area: encabezado; }
     .compra .navegador {
@@ -579,14 +636,14 @@ html {
       grid-area: dev; }
   .alquiler {
     display: grid;
-    grid-template-areas: "encabezado" "navegador" "titutlo__alquiler" "alquiler" "footer" "dev";
+    grid-template-areas: "navegador" "encabezado" "titutlo__alquiler" "alquiler" "footer" "dev";
     grid-template-columns: 100vw;
-    grid-template-rows: 400px 55px 270px auto auto 60px; }
-    .alquiler .encabezado {
-      grid-area: encabezado; }
+    grid-template-rows: 150px 55px 270px auto auto 60px; }
     .alquiler .navegador {
       grid-area: navegador;
       z-index: 1000; }
+    .alquiler .encabezado {
+      grid-area: encabezado; }
     .alquiler titulo__alquiler {
       grid-area: titulo__alquiler; }
     .alquiler .container-alquiler {
@@ -609,11 +666,6 @@ html {
       grid-area: footer; }
     .contacto .dev-section {
       grid-area: dev; }
-  .encabezado .index-bg,
-  .encabezado .buscador-bg,
-  .encabezado .compra-bg,
-  .encabezado .alquiler-bg {
-    height: 100%; }
   .index footer,
   .contacto footer,
   .compra footer,
@@ -656,7 +708,7 @@ html {
   display: flex;
   flex-direction: row; }
   .dev-section p, .dev-section strong {
-    font-size: clamp(1.6rem, 6vw, 2rem);
+    font-size: clamp(1.4rem, 6vw, 2rem);
     color: #fff;
     font-family: "Style Script", cursive;
     letter-spacing: 3px;
@@ -786,6 +838,8 @@ html {
   .nav__link {
     color: #003049;
     font-weight: bold; }
+  .nav ul {
+    margin: 0; }
 
 .nav__link--activado {
   position: relative; }
@@ -824,61 +878,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.alquiler-bg {
-  background-image: url(../../assets/mobile/alquiler.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.buscador-bg {
-  background-image: url(../../assets/mobile/buscador.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.compra-bg {
-  background-image: url(../../assets/mobile/compra.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.contacto-bg {
-  background-image: url(../../assets/mobile/contacto.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.index-bg {
-  background-image: url(../../assets/mobile/index.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.login-bg {
-  background-image: url(../../assets/mobile/login.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: hard-light; }
-
-.title, .subtitle {
+.header__title {
   font-size: clamp(2.7rem, 5vw, 6rem);
   color: #003049;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700; }
-
-.subtitle {
-  font-size: clamp(2rem, 5vw, 5rem);
-  margin-top: .5em; }
+  font-weight: 700;
+  text-decoration: underline; }

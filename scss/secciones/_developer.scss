@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
         & p, strong{
-            font-size: clamp(1.6rem, 6vw,2rem);
+            font-size: clamp(1.4rem, 6vw,2rem);
             color: #fff ;
             font-family: $logo;
             letter-spacing: 3px;

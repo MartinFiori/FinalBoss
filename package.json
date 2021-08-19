@@ -1,7 +1,6 @@
 {
   "name": "alojamientobuenosaires",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/MartinFiori/AlojamientoBuenosAires/issues"
   },
-  "homepage": "https://github.com/MartinFiori/AlojamientoBuenosAires#readme"
+  "homepage": "https://github.com/MartinFiori/AlojamientoBuenosAires#readme",
+  "description": ""
 }
