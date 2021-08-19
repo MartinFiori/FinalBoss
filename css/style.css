@@ -8,6 +8,153 @@
     text-decoration: underline;
     text-decoration-color: #003049; }
 
+.carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5em 0; }
+
+.section {
+  width: 500px;
+  height: 300px;
+  transform: skewX(10deg);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; }
+  .section::before {
+    content: '';
+    position: absolute;
+    background: #003049;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scaleX(0%);
+    transition: transform 500ms ease-out; }
+  .section:hover::before {
+    transform: scaleX(100%);
+    transition: transform 500ms ease-out; }
+
+.tarjeta-img1 {
+  background-image: url(../../assets/deptos/aguero/acama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.tarjeta-img2 {
+  background-image: url(../../assets/deptos/aguero/acomedor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  bottom: 0;
+  z-index: -2; }
+
+.tarjeta-img3 {
+  background-image: url(../../assets/deptos/aguero/apileta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 66%;
+  bottom: 0;
+  z-index: -3; }
+
+.container-texto ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 60px;
+  opacity: .01;
+  transition: opacity 400ms ease;
+  transition-delay: 400ms; }
+  .container-texto ul:hover {
+    opacity: 1; }
+  .container-texto ul h3 {
+    color: #fff;
+    font-size: 18px;
+    cursor: default; }
+  .container-texto ul button {
+    cursor: pointer;
+    padding: .4em; }
+
+section li {
+  transform: skewX(-10deg); }
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 200px;
+    height: 400px; }
+  .tarjeta-img1 {
+    background-image: url(../../assets/deptos/aguero/acama.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1; }
+  .tarjeta-img2 {
+    background-image: url(../../assets/deptos/aguero/acomedor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    bottom: 0;
+    z-index: -2; }
+  .tarjeta-img3 {
+    background-image: url(../../assets/deptos/aguero/apileta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 66%;
+    left: 0;
+    bottom: 0;
+    z-index: -2; }
+  .container-texto ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 60px;
+    opacity: .01;
+    transition: opacity 400ms ease;
+    transition-delay: 400ms; }
+    .container-texto ul:hover {
+      opacity: 1; }
+    .container-texto ul h3 {
+      color: #fff;
+      font-size: 18px;
+      cursor: default; }
+    .container-texto ul button {
+      cursor: pointer;
+      padding: .4em; } }
+
 .alquiler__titulo {
   display: flex;
   justify-content: center;
@@ -178,6 +325,153 @@
     color: #003049;
     text-decoration: underline;
     text-decoration-color: #003049; }
+
+.carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5em 0; }
+
+.section {
+  width: 500px;
+  height: 300px;
+  transform: skewX(10deg);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; }
+  .section::before {
+    content: '';
+    position: absolute;
+    background: #003049;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scaleX(0%);
+    transition: transform 500ms ease-out; }
+  .section:hover::before {
+    transform: scaleX(100%);
+    transition: transform 500ms ease-out; }
+
+.tarjeta-img1 {
+  background-image: url(../../assets/deptos/aguero/acama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.tarjeta-img2 {
+  background-image: url(../../assets/deptos/aguero/acomedor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  bottom: 0;
+  z-index: -2; }
+
+.tarjeta-img3 {
+  background-image: url(../../assets/deptos/aguero/apileta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 101%;
+  width: 33.33333%;
+  position: absolute;
+  top: 0;
+  left: 66%;
+  bottom: 0;
+  z-index: -3; }
+
+.container-texto ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 60px;
+  opacity: .01;
+  transition: opacity 400ms ease;
+  transition-delay: 400ms; }
+  .container-texto ul:hover {
+    opacity: 1; }
+  .container-texto ul h3 {
+    color: #fff;
+    font-size: 18px;
+    cursor: default; }
+  .container-texto ul button {
+    cursor: pointer;
+    padding: .4em; }
+
+section li {
+  transform: skewX(-10deg); }
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 200px;
+    height: 400px; }
+  .tarjeta-img1 {
+    background-image: url(../../assets/deptos/aguero/acama.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1; }
+  .tarjeta-img2 {
+    background-image: url(../../assets/deptos/aguero/acomedor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    bottom: 0;
+    z-index: -2; }
+  .tarjeta-img3 {
+    background-image: url(../../assets/deptos/aguero/apileta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33.33333%;
+    width: 101%;
+    position: absolute;
+    top: 66%;
+    left: 0;
+    bottom: 0;
+    z-index: -2; }
+  .container-texto ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 60px;
+    opacity: .01;
+    transition: opacity 400ms ease;
+    transition-delay: 400ms; }
+    .container-texto ul:hover {
+      opacity: 1; }
+    .container-texto ul h3 {
+      color: #fff;
+      font-size: 18px;
+      cursor: default; }
+    .container-texto ul button {
+      cursor: pointer;
+      padding: .4em; } }
 
 .container-contacto__body {
   display: flex;
